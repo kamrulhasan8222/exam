@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-70 {
+    width: 70%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-30 {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+
+/* Site css */
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animation {
+    background: #2B2424;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    left: 0;
+    top: 25%;
+}
+
+.animation-image {
+    width: 40px;
+    display: block;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.get-in-touch-title {
+    text-align: center;
+    color: #333;
+    padding-top: 100px;
+}
+
+.get-in-touch-heading {
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-bottom: 31px;
+    position: relative;
+}
+
+.get-in-touch-heading::before {
+    content: '';
+    position: absolute;
+    width: 57px;
+    height: 5px;
+    background: red;
+    left: 46%;
+    bottom: 15px;
+}
+
+.get-in-touch-text {
+    font-size: 15px;
+    padding: 0 200px;
+}
+
+.get-in-touch-content {
+    padding-top: 50px;
+}
+
+.get-in-touch-content-left {
+    width: 30%;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.get-in-touch-content-left-list-items {
+    list-style: none;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.list-item-heading {
+    display: block;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.list-item-description {
+    font-size: 12px;
+    color: gray;
+}
+
+#name {
+    display: inline-block;
+    width: 47%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#email {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+}
+
+#subject {
+    width: 99%;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#message {
+    width: 99%;
+    height: 150px;
+}
+
+.get-in-touch-content-right {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #B90334;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 8px;
+}
+
+.get-in-touch-footer {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 30%;
+}
+
+.social-icon-list-items {
+    list-style: none;
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.social-icon-list-items img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-bottom;
+}
+
+.contact-icon {
+    width: 20px;
+    display: inline-block;
+}
+
+.contact-number {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.email {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-bottom;
+}
+
+.email-icon {
+    width: 24px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.email-address {
+    font-size: 25px;
+    font-weight: bold;
+}
